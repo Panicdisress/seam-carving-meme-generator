@@ -4,8 +4,8 @@
 <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"></a>
 <a href="https://developer.nvidia.com/cuda-toolkit"><img src="https://img.shields.io/badge/CUDA-11.x-green.svg" alt="CUDA"></a>
 <a href="#"><img src="https://img.shields.io/badge/GPU-Required-red.svg" alt="GPU"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
-</p>
+<!-- NEW (GPL-3.0): -->
+<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL_3.0-blue.svg" alt="License"></a>
 
 ## GPU-accelerated content-aware image resizing for creating distorted animations.
 
