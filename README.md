@@ -13,7 +13,7 @@
 
 | Original Image | 400 x 400 px Compression | 250 x 250 px Compression |
 | :---: | :---: | :---: |
-| <img src="media/nice.jpg" width="400"> | <img src="media/nice-400.gif" width="400"> | <img src="media/nice-250.gif" width="400"> |
+| <img src="media/nice.jpg" width="300"> | <img src="media/nice-400.gif" width="300"> | <img src="media/nice-250.gif" width="300"> |
 | **Time taken** | `1.4 min.` | `33 sec.` |
 
 ## Fully 📸functional UI with inbuild video conversion.⬇️
