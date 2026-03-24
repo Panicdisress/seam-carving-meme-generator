@@ -19,3 +19,11 @@
 ## <em>Fully functional UI with inbuild video conversion.</em>⬇️
 <img src="media/ui.png" alt="description" width="400">
 
+### ✨ Features
+
+* **⚡GPU-Accelerated** – 10-20x faster than CPU using CuPy/CUDA.
+* **🎯Content-Aware** – Intelligent seam carving preserves important features.
+* **🎛️Customizable Chaos** – Adjust jitter and energy noise for unique effects.
+* **📹Built-in Video Export** – One-click FFmpeg integration.
+* **🖥️User-Friendly GUI** – No coding required.
+* **⚙️Configurable** – Fine-tune every parameter.
