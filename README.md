@@ -123,3 +123,10 @@ This project was developed with assistance from AI language models. This collabo
 * **Permissions:** Ensure the application has write access to the project directory.
 
 ---
+
+
+## 🙏 Acknowledgments
+The core logic is directly taken from andrewdcampbell's fast python based implementation.
+**[andrewdcampbell](https://github.com/andrewdcampbell/seam-carving)**
+
+
