@@ -27,3 +27,21 @@
 * **📹Built-in Video Export** – One-click FFmpeg integration.
 * **🖥️User-Friendly GUI** – No coding required.
 * **⚙️Configurable** – Fine-tune every parameter.
+
+###🚀 Quick Start
+*prerequisites*
+* NVIDIA GPU with CUDA support
+* Updated NVIDIA Drivers
+* Python 3.8+
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/content-aware-meme.git
+cd content-aware-meme
+
+# Install dependencies (includes CUDA runtime)
+pip install -r requirements.txt
+
+
+
