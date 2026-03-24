@@ -11,12 +11,12 @@
 
 <p align="center"> <img src="media/shaq.gif" alt="description" width="200"> </p>
 
-|Original Image|image compression 400 X 400 px|image compression 250 X 250 px|
-|----------------|-------------------------------|-----------------------------|
-|<img src="media/nice.jpg" alt="description" width="400">|<img src="media/nice-400.gif" alt="description" width="400">|<img src="media/nice-250.gif" alt="description" width="400">|
-|Time taken-->|`1.4 min.`|`33 sec.`|
+| Original Image | 400 x 400 px Compression | 250 x 250 px Compression |
+| :---: | :---: | :---: |
+| <img src="media/nice.jpg" width="400"> | <img src="media/nice-400.gif" width="400"> | <img src="media/nice-250.gif" width="400"> |
+| **Time taken** | `1.4 min.` | `33 sec.` |
 
-## <em>Fully 📸functional UI with inbuild video conversion.</em>⬇️
+## Fully 📸functional UI with inbuild video conversion.⬇️
 <p align="center">
   <img src="media/ui.png" width="500" alt="App Interface">
 </p>
@@ -84,7 +84,9 @@ pip install -r requirements.txt
 
 ## 🤖 AI Development Note
 
-This project was developed with assistance from AI language models. This collaborative process ensures high-quality code while maintaining human creative direction.
+*I am not a coder. I don’t claim to be one, nor do I have the professional skillset. I am simply an enthusiast. I use AI to achieve my goals. Because I have a foundation in basic coding from school and college, I understand the logic well enough to guide these models and steer them to fulfill my tasks. This project is the result of that partnership.*
+
+---
 
 ### AI Contributions:
 * **Optimization:** Algorithm refactoring and CUDA memory management.
