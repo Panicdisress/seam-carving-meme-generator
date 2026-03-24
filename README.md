@@ -41,7 +41,7 @@
 * **For Maximum Chaos:** Crank `Energy Noise` to 100+ and `Frame Jitter` to 5.
 * **Resolution Tip:** For the fastest GPU performance, use source images with a width under **512px**.
 * **Video Export:** If you change your mind about the framerate after processing, just click **"Convert Last Result to Video"** to re-render without re-calculating the seams!
-
+---
 ### ✨ Features
 
 * **⚡ GPU-Accelerated** – 10-20x faster than CPU using CuPy/CUDA kernels.
@@ -50,8 +50,8 @@
 * **🎬 Built-in Video Export** – Integrated FFmpeg support to convert frames to MP4 instantly.
 * **🖥️ User-Friendly GUI** – Simple Tkinter-based interface; no coding required to run.
 * **⚙️ Fine-Tuned Control** – Toggle **Forward Energy** for higher quality results at the cost of speed.
-
-###🚀 Quick Start
+---
+### 🚀 Quick Start
 ### *Prerequisites*
 * **NVIDIA GPU** (Required for CuPy/CUDA acceleration).
 * **Python 3.8+**
@@ -67,8 +67,59 @@ pip install -r requirements.txt
 ```
 
 ### 📏 Image Size:
-* less than 512px: lightning fast⚡
+* less than  512px: lightning fast⚡
 * 512-1080px: slow but steady ✓
 * greater than 1080px: Very slow but possible 🐌
 
+### 🛠️ Libraires:
+* **CuPy**: For GPU-accelerated array computing.
 
+* **OpenCV**: Image manipulation and frame handling.
+
+* **Tkinter**: Lightweight desktop GUI.
+
+* **FFmpeg**: Backend for high-quality video encoding.
+
+---
+
+## 🤖 AI Development Note
+
+This project was developed with assistance from AI language models. This collaborative process ensures high-quality code while maintaining human creative direction.
+
+### AI Contributions:
+* **Optimization:** Algorithm refactoring and CUDA memory management.
+* **Debugging:** Error correction and edge-case handling.
+* **Documentation:** Drafting structure and technical explanations.
+* **Fine-Tuning:** Parameter range suggestions and performance balancing.
+
+### Human Oversight:
+* ✅ **Validation:** All code was reviewed, tested, and validated by human developers.
+* ✅ **Design:** Core algorithm logic and creative direction remain human-led.
+* ✅ **Testing:** Performance benchmarks and manual validation conducted on local hardware.
+
+---
+
+## 🔧 Troubleshooting
+
+### ❌ "CUDA not available"
+* **Check Drivers:** Ensure the latest NVIDIA drivers are installed.
+* **Verify CuPy:** Run `pip show cupy-cuda11x` (replace `11x` with your version) to ensure the GPU-specific library is installed.
+* **Compatibility:** Verify your GPU supports CUDA compute capability 3.0 or higher.
+
+### ❌ "Out of GPU memory"
+* **Downscale:** Reduce input image resolution (recommended `< 512px`).
+* **Batching:** Lower the total **Frame Count** in the GUI.
+* **VRAM Check:** Close other GPU-intensive applications (Chrome, Games, Video Editors).
+<img src="media/Vram use.png" alt="description" width="300">
+
+### ❌ Slow Performance
+* **Resolution:** High-res images (1080p+) scale exponentially in processing time.
+* **Forward Energy:** Disable this option in the GUI for a significant speed boost.
+* **Utilization:** Check Task Manager/nvidia-smi to ensure the Python process is hitting the GPU.
+
+### ❌ Video Export Fails
+* **FFmpeg Path:** Ensure [FFmpeg](https://ffmpeg.org/download.html) is installed and added to your System PATH.
+* **Frame Check:** Verify that the `output_frames/` folder contains generated `.png` files.
+* **Permissions:** Ensure the application has write access to the project directory.
+
+---
