@@ -4,12 +4,25 @@
 <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"></a>
 <a href="https://developer.nvidia.com/cuda-toolkit"><img src="https://img.shields.io/badge/CUDA-11.x-green.svg" alt="CUDA"></a>
 <a href="#"><img src="https://img.shields.io/badge/GPU-Required-red.svg" alt="GPU"></a>
-<!-- NEW (GPL-3.0): -->
 <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL_3.0-blue.svg" alt="License"></a>
+</p>
 
 ## GPU-accelerated content-aware image resizing for creating distorted animations.
 
 <p align="center"> <img src="media/shaq.gif" alt="description" width="200"> </p>
+
+---
+
+### ✨ Features
+
+* **⚡ GPU-Accelerated** – 10-20x faster than CPU using CuPy/CUDA kernels.
+* **🎯 Content-Aware** – Intelligent seam carving algorithm that preserves important image details.
+* **🌀 Customizable Chaos** – Adjust **Frame Jitter** and **Energy Noise** for unique, glitchy effects.
+* **🎬 Built-in Video Export** – Integrated FFmpeg support to convert frames to MP4 instantly.
+* **🖥️ User-Friendly GUI** – Simple Tkinter-based interface; no coding required to run.
+* **⚙️ Fine-Tuned Control** – Toggle **Forward Energy** for higher quality results at the cost of speed.
+
+---
 
 | Original Image | 400 x 400 px Compression | 250 x 250 px Compression |
 | :---: | :---: | :---: |
@@ -20,6 +33,27 @@
 <p align="center">
   <img src="media/ui.png" width="500" alt="App Interface">
 </p>
+
+---
+
+### 🚀 Quick Start
+### *Prerequisites*
+* **NVIDIA GPU** (Required for CuPy/CUDA acceleration).
+* **Python 3.8+**
+* **FFmpeg** (Added to system PATH for video export).
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Panicdisress/seam-carving-meme-generator
+cd content-aware-meme
+# Install dependencies (includes CUDA runtime)
+pip install -r requirements.txt
+```
+### Use
+Run the `launch_gui.bat` file.
+
+---
 
 ## 🎛️ Parameter Guide
 
@@ -41,38 +75,13 @@
 * **For Maximum Chaos:** Crank `Energy Noise` to 100+ and `Frame Jitter` to 5.
 * **Resolution Tip:** For the fastest GPU performance, use source images with a width under **512px**.
 * **Video Export:** If you change your mind about the framerate after processing, just click **"Convert Last Result to Video"** to re-render without re-calculating the seams!
----
-### ✨ Features
-
-* **⚡ GPU-Accelerated** – 10-20x faster than CPU using CuPy/CUDA kernels.
-* **🎯 Content-Aware** – Intelligent seam carving algorithm that preserves important image details.
-* **🌀 Customizable Chaos** – Adjust **Frame Jitter** and **Energy Noise** for unique, glitchy effects.
-* **🎬 Built-in Video Export** – Integrated FFmpeg support to convert frames to MP4 instantly.
-* **🖥️ User-Friendly GUI** – Simple Tkinter-based interface; no coding required to run.
-* **⚙️ Fine-Tuned Control** – Toggle **Forward Energy** for higher quality results at the cost of speed.
----
-### 🚀 Quick Start
-### *Prerequisites*
-* **NVIDIA GPU** (Required for CuPy/CUDA acceleration).
-* **Python 3.8+**
-* **FFmpeg** (Added to system PATH for video export).
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/content-aware-meme.git
-cd content-aware-meme
-# Install dependencies (includes CUDA runtime)
-pip install -r requirements.txt
-```
-### Use
-Run the `launch_gui.bat` file.
-
 
 ### 📏 Image Size:
 * less than  512px: lightning fast⚡
 * 512-1080px: slow but steady ✓
 * greater than 1080px: Very slow but possible 🐌
+
+---
 
 ### 🛠️ Libraires:
 * **CuPy**: For GPU-accelerated array computing.
@@ -85,11 +94,19 @@ Run the `launch_gui.bat` file.
 
 ---
 
+## 🚧 Limitations & Future Scope
+
+**Current Limitations:**
+* **Input Format:** The application currently only supports static **image input** for the initial generation. It cannot process a video as the source file yet.
+
+**Future Scope:**
+* **Video-to-Video Pipeline:** I am looking into developing an optimized effect for direct video-to-video processing, allowing you to warp existing video files frame-by-frame.
+
+---
+
 ## 🤖 AI Development Note
 
 *I am not a coder. I don’t claim to be one, nor do I have the professional skillset. I am simply an enthusiast. I use AI to achieve my goals. Because I have a foundation in basic coding from school and college, I understand the logic well enough to guide these models and steer them to fulfill my tasks. This project is the result of that partnership.*
-
----
 
 ### AI Contributions:
 * **Optimization:** Algorithm refactoring and CUDA memory management.
@@ -114,7 +131,7 @@ Run the `launch_gui.bat` file.
 ### ❌ "Out of GPU memory"
 * **Downscale:** Reduce input image resolution (recommended `< 512px`).
 * **Batching:** Lower the total **Frame Count** in the GUI.
-* **VRAM Check:** Close other GPU-intensive applications (Chrome, Games, Video Editors).
+* **VRAM Check:** Close other GPU-intensive applications.
 <img src="media/Vram use.png" alt="description" width="300">
 
 ### ❌ Slow Performance
@@ -129,9 +146,6 @@ Run the `launch_gui.bat` file.
 
 ---
 
-
 ## 🙏 Acknowledgments
 The core logic is directly taken from andrewdcampbell's fast python based implementation.
 **[andrewdcampbell](https://github.com/andrewdcampbell/seam-carving)**
-
-
