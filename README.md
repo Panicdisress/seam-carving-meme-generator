@@ -65,6 +65,9 @@ cd content-aware-meme
 # Install dependencies (includes CUDA runtime)
 pip install -r requirements.txt
 ```
+### Use
+Run the `launch_gui.bat` file.
+
 
 ### 📏 Image Size:
 * less than  512px: lightning fast⚡
