@@ -13,6 +13,10 @@
 
 ---
 
+*Skip the installation process and jump straight into the action by going to **[Releases](https://github.com/Panicdisress/seam-carving-meme-generator/releases)** page.*
+
+---
+
 ### ✨ Features
 
 * **⚡ GPU-Accelerated** – 10-20x faster than CPU using CuPy/CUDA kernels.
@@ -50,6 +54,8 @@ cd content-aware-meme
 # Install dependencies (includes CUDA runtime)
 pip install -r requirements.txt
 ```
+*or just download the **[Build](https://github.com/Panicdisress/seam-carving-meme-generator/releases)** file .*
+
 ### Use
 Run the `launch_gui.bat` file.
 
